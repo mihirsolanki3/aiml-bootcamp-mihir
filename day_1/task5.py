@@ -1,3 +1,4 @@
+# Write a function that takes a sentence and returns it reversed word-by-word (e.g. 'the cat sat' -> 'sat cat the')
 def reversed (sentence):
     words = sentence.split()
     reversed_words = words[::-1]
@@ -54,3 +55,6 @@ if word == word[::-1]:
     print(word,"is a Palindrome")
 else:
     print(word,"is Not a palindrome")
+    
+    
+    
