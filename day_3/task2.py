@@ -5,7 +5,6 @@
 from collections import Counter
 import string
 
-
 # ------------------------------------------------------------
 # STEP 1: Read the text file
 # ------------------------------------------------------------
@@ -84,9 +83,7 @@ print(example_counts)
 # ------------------------------------------------------------
 
 # Remove punctuation
-clean_text = text.lower().translate(
-    str.maketrans("", "", string.punctuation)
-)
+clean_text = text.lower().translate(str.maketrans("", "", string.punctuation))
 
 # Split into words
 clean_words = clean_text.split()
@@ -122,13 +119,10 @@ stopwords = {
     "was",
     "were",
     "be",
-    "by"
+    "by",
 }
 
-filtered_words = [
-    word for word in clean_words
-    if word not in stopwords
-]
+filtered_words = [word for word in clean_words if word not in stopwords]
 
 filtered_counts = Counter(filtered_words)
 

@@ -1,5 +1,6 @@
 # 1. Add __eq__ to Student so two students with the same roll number compare equal. Then try putting them in aset — what breaks, and why? (Search: __hash__)
 
+
 class Student:
     def __init__(self, name, roll_no):
         self.name = name
@@ -46,6 +47,7 @@ print(len(students))
 
 # 2.Write a generator that reads your 500k-line file and yields only lines matching a condition. Chain it with another generator.
 
+
 def read_matching_lines(filename, condition):
     """Read file and yield only lines matching the condition."""
     with open(filename, "r") as file:
@@ -69,8 +71,9 @@ uppercase_lines = make_uppercase(matching_lines)
 # Read the final results
 for line in uppercase_lines:
     print(line)
-    
+
 # 3. Build a Classroom class that holds many Students. Give it __len__ so len(classroom) works, and make it iterable so for s in classroom works.
+
 
 class Student:
     def __init__(self, name, roll_no):
@@ -116,9 +119,10 @@ print("Students:")
 
 for s in classroom:
     print(s)
-    
-    
+
+
 # 4. Read about @property. Convert average() into a property and decide whether you prefer it.
+
 
 class Student:
     def __init__(self, name, marks):

@@ -4,7 +4,6 @@
 
 from collections import defaultdict, namedtuple, deque, Counter
 
-
 # =========================================================
 # 1. defaultdict
 # Group employees by department

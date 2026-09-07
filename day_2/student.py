@@ -1,4 +1,4 @@
-# Day_2 
+# Day_2
 # Task_1
 # Create student.py.
 # Write a Student class with __init__ taking a name and a roll number, and storing an empty marks list.
@@ -7,34 +7,35 @@
 # Add highest() and lowest().
 # Create three students, give them marks, print each one's average.
 
+
 class student:
-    def __init__(self,name,rollno):
-        self.name=name
-        self.rollno=rollno
-        self.marks=[]
-        
-    def add_mark(self,score):
-        self.marks.append(score)   
-        
+    def __init__(self, name, rollno):
+        self.name = name
+        self.rollno = rollno
+        self.marks = []
+
+    def add_mark(self, score):
+        self.marks.append(score)
+
     def avg(self):
-        if len(self.marks)==0:
+        if len(self.marks) == 0:
             return 0
         else:
-            return sum(self.marks)/len(self.marks)
-        
+            return sum(self.marks) / len(self.marks)
+
     def hightest(self):
-        if len(self.marks)==0:
+        if len(self.marks) == 0:
             return 0
         else:
-            return max(self.marks)  
+            return max(self.marks)
 
     def lowest(self):
-            if len(self.marks)==0:
-                return 0
-            else:
-                return min(self.marks)  
-            
- 
+        if len(self.marks) == 0:
+            return 0
+        else:
+            return min(self.marks)
+
+
 student1 = student("Mihir", 101)
 student2 = student("Rahul", 102)
 student3 = student("Amit", 103)
@@ -55,4 +56,3 @@ for student in [student1, student2, student3]:
     print("Highest:", student.hightest())
     print("Lowest:", student.lowest())
     print()
- 

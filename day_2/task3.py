@@ -32,4 +32,3 @@ teacher = Teacher("Aarav", "Python")
 print(person.greet())
 print(student.greet())
 print(teacher.greet())
-

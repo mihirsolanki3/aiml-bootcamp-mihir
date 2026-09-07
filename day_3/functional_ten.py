@@ -6,7 +6,6 @@
 
 from functools import reduce
 
-
 # ============================================================
 # TASK 01
 # Given a list of numbers, return the squares of only the odd ones.
@@ -131,7 +130,7 @@ print("5. Functional:", product)
 items = [
     {"name": "Pen", "price": 10},
     {"name": "Book", "price": 50},
-    {"name": "Bag", "price": 500}
+    {"name": "Bag", "price": 500},
 ]
 
 # Loop version
@@ -236,6 +235,7 @@ for n in nums:
     out.append(total)
 
 print("10. Loop:", out)
+
 
 # Functional version
 def running_total(nums):

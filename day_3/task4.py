@@ -8,17 +8,17 @@ from collections import Counter
 # 1. Messy text
 # ---------------------------------------------------------
 
-text = '''
+text = """
 msofficial12@gmail.com wrote to ravi_k99@gmail.com
 aarav.p+work@company.co.in, phone 1234567899
 dev@sub.domain.example.org and +91 11111 11111 
 not.an.email@ nor @nothing.com -- watch these
-'''
+"""
 # ---------------------------------------------------------
 # 2. Extract every email address
 # ---------------------------------------------------------
 
-email_pattern = r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}'
+email_pattern = r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
 
 emails = re.findall(email_pattern, text)
 
@@ -32,7 +32,7 @@ print("\nNumber of emails:", len(emails))
 # 3. Extract phone numbers
 # ---------------------------------------------------------
 
-phone_pattern = r'(?:\+91[\s-]?)?\d{2,5}[-\s]\d{4,5}[-\s]\d{4,5}'
+phone_pattern = r"(?:\+91[\s-]?)?\d{2,5}[-\s]\d{4,5}[-\s]\d{4,5}"
 
 phones = re.findall(phone_pattern, text)
 
@@ -44,7 +44,7 @@ for phone in phones:
 # 4. Split each email into username and domain
 # ---------------------------------------------------------
 
-email_split_pattern = r'([A-Za-z0-9._%+-]+)@([A-Za-z0-9.-]+\.[A-Za-z]{2,})'
+email_split_pattern = r"([A-Za-z0-9._%+-]+)@([A-Za-z0-9.-]+\.[A-Za-z]{2,})"
 
 email_parts = re.findall(email_split_pattern, text)
 

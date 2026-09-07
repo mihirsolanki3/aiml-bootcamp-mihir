@@ -3,7 +3,6 @@
 
 from itertools import combinations, permutations, product
 
-
 # ---------------------------------------------------------
 # 1. Generate every possible pair of students
 # ---------------------------------------------------------
@@ -68,4 +67,3 @@ for subset in all_subsets:
     print(subset)
 
 print("\nTotal number of feature subsets:", len(all_subsets))
-

@@ -17,14 +17,14 @@ messages = {
         "Request completed successfully",
         "Database connection established",
         "File uploaded successfully",
-        "User logged out"
+        "User logged out",
     ],
     "WARN": [
         "High memory usage detected",
         "Slow response time",
         "Connection retry",
         "Disk space is getting low",
-        "Invalid input received"
+        "Invalid input received",
     ],
     "ERROR": [
         "Database connection failed",
@@ -32,8 +32,8 @@ messages = {
         "Database connection failed",
         "Authentication failed",
         "Database connection failed",
-        "Server timeout"
-    ]
+        "Server timeout",
+    ],
 }
 
 # Create 250 log entries
@@ -45,10 +45,7 @@ with open("server.log", "w") as file:
         minute = (i * 7) % 60
         second = (i * 13) % 60
 
-        timestamp = (
-            f"2026-09-{day:02d} "
-            f"{hour:02d}:{minute:02d}:{second:02d}"
-        )
+        timestamp = f"2026-09-{day:02d} " f"{hour:02d}:{minute:02d}:{second:02d}"
 
         level = levels[i % len(levels)]
         message = messages[level][i % len(messages[level])]
@@ -99,17 +96,10 @@ for line in lines:
         ts, level, message = m.groups()
 
         # Convert string to datetime
-        timestamp = datetime.strptime(
-            ts,
-            "%Y-%m-%d %H:%M:%S"
-        )
+        timestamp = datetime.strptime(ts, "%Y-%m-%d %H:%M:%S")
 
         # Store parsed information
-        entry = {
-            "timestamp": timestamp,
-            "level": level,
-            "message": message
-        }
+        entry = {"timestamp": timestamp, "level": level, "message": message}
 
         entries.append(entry)
 
@@ -153,9 +143,7 @@ print(f"{busiest_hour:02d}:00 - {busiest_count} entries")
 
 if error_messages:
 
-    most_common_error, error_count = (
-        error_messages.most_common(1)[0]
-    )
+    most_common_error, error_count = error_messages.most_common(1)[0]
 
     print("\nMost frequent ERROR message:")
     print(f"{most_common_error} ({error_count} times)")
@@ -180,9 +168,7 @@ for level, group in grouped_by_level.items():
 error_entries = grouped_by_level["ERROR"]
 
 # Sort ERROR entries by timestamp
-error_entries.sort(
-    key=lambda entry: entry["timestamp"]
-)
+error_entries.sort(key=lambda entry: entry["timestamp"])
 
 longest_gap = None
 gap_start = None

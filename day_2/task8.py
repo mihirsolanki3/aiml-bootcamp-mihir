@@ -26,10 +26,10 @@ def class_average(students, passing=40):
 
 
 data = [
-    {"name": "asha",  "marks": 88},
-    {"name": "ravi",  "marks": 92},
+    {"name": "asha", "marks": 88},
+    {"name": "ravi", "marks": 92},
     {"name": "meera", "marks": 79},
-    {"name": "dev",   "marks": 40},
+    {"name": "dev", "marks": 40},
 ]
 
 avg, rate = class_average(data)

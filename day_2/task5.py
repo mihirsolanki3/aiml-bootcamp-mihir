@@ -1,5 +1,6 @@
 # TASK 05 - Generators and yield
 
+
 # 1. Fibonacci using a list
 def fib_list(n):
     result = []
