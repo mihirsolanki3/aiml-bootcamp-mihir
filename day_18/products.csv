@@ -1,0 +1,21 @@
+product_id,product_name,category,unit_price
+P001,Laptop,Electronics,800
+P002,Mouse,Electronics,25
+P003,Keyboard,Electronics,45
+P004,Monitor,Electronics,250
+P005,Webcam,Electronics,60
+P006,Headphones,Electronics,120
+P007,USB Hub,Electronics,35
+P008,Desk Lamp,Office,40
+P009,Chair,Office,180
+P010,Standing Desk,Office,400
+P011,Notebook,Stationery,8
+P012,Pen Set,Stationery,15
+P013,Backpack,Accessories,55
+P014,Water Bottle,Accessories,20
+P015,Phone Stand,Accessories,18
+P016,Cable Set,Electronics,30
+P017,Power Bank,Electronics,50
+P018,Speaker,Electronics,90
+P019,Microphone,Electronics,110
+P020,Tablet,Electronics,350
