@@ -1,0 +1,152 @@
+{
+    "raw_features": [
+        "income",
+        "years_employed",
+        "credit_score",
+        "debt_ratio",
+        "loan_amount"
+    ],
+    "engineered_features": [
+        "loan_to_income",
+        "debt_burden",
+        "credit_to_debt",
+        "disposable_income"
+    ],
+    "features": [
+        "income",
+        "years_employed",
+        "credit_score",
+        "debt_ratio",
+        "loan_amount",
+        "loan_to_income",
+        "debt_burden",
+        "credit_to_debt",
+        "disposable_income"
+    ],
+    "target": "repaid",
+    "optimal_threshold": 0.45,
+    "intercept": -0.7156202707702898,
+    "metrics": {
+        "accuracy": 0.7458,
+        "precision": 0.5074,
+        "recall": 0.4434,
+        "f1": 0.4732,
+        "roc_auc": 0.7025
+    },
+    "threshold_sweep": [
+        {
+            "threshold": 0.35,
+            "accuracy": 0.6542,
+            "precision": 0.394,
+            "recall": 0.6375,
+            "f1": 0.487
+        },
+        {
+            "threshold": 0.4,
+            "accuracy": 0.7092,
+            "precision": 0.4448,
+            "recall": 0.521,
+            "f1": 0.4799
+        },
+        {
+            "threshold": 0.45,
+            "accuracy": 0.7458,
+            "precision": 0.5074,
+            "recall": 0.4434,
+            "f1": 0.4732
+        },
+        {
+            "threshold": 0.5,
+            "accuracy": 0.7517,
+            "precision": 0.5304,
+            "recall": 0.3107,
+            "f1": 0.3918
+        },
+        {
+            "threshold": 0.55,
+            "accuracy": 0.7525,
+            "precision": 0.5455,
+            "recall": 0.233,
+            "f1": 0.3265
+        },
+        {
+            "threshold": 0.6,
+            "accuracy": 0.7558,
+            "precision": 0.5952,
+            "recall": 0.1618,
+            "f1": 0.2545
+        },
+        {
+            "threshold": 0.65,
+            "accuracy": 0.7533,
+            "precision": 0.6182,
+            "recall": 0.11,
+            "f1": 0.1868
+        }
+    ],
+    "feature_stats": {
+        "income": {
+            "mean": 56931.966875,
+            "scale": 18832.52857739177,
+            "min": 12000.0,
+            "max": 132120.0,
+            "coefficient": 0.19763742306272616
+        },
+        "years_employed": {
+            "mean": 6.382520833333333,
+            "scale": 6.504074099777715,
+            "min": 0.0,
+            "max": 40.0,
+            "coefficient": 0.35536354037006834
+        },
+        "credit_score": {
+            "mean": 674.2841666666667,
+            "scale": 74.60962068865888,
+            "min": 393.0,
+            "max": 850.0,
+            "coefficient": 0.5280892124287051
+        },
+        "debt_ratio": {
+            "mean": 0.22543479166666666,
+            "scale": 0.12706280401651748,
+            "min": 0.006,
+            "max": 0.673,
+            "coefficient": -0.13472377582521458
+        },
+        "loan_amount": {
+            "mean": 56949.104166666664,
+            "scale": 32776.36685475501,
+            "min": 3100.0,
+            "max": 197800.0,
+            "coefficient": -0.20773527099481787
+        },
+        "loan_to_income": {
+            "mean": 1.001969775569471,
+            "scale": 0.45545992015868186,
+            "min": 0.19950124688279303,
+            "max": 1.7998126589053927,
+            "coefficient": -0.04842765014268169
+        },
+        "debt_burden": {
+            "mean": 0.3339967323131304,
+            "scale": 0.15182309234296645,
+            "min": 0.06650248839904718,
+            "max": 0.5999509317752277,
+            "coefficient": -0.048360618913919115
+        },
+        "credit_to_debt": {
+            "mean": 3142.657240098058,
+            "scale": 1843.374229689958,
+            "min": 820.6599713055954,
+            "max": 14500.0,
+            "coefficient": 0.06774554991189354
+        },
+        "disposable_income": {
+            "mean": 44045.871347500004,
+            "scale": 16287.848278263358,
+            "min": 5772.0,
+            "max": 117838.52500000001,
+            "coefficient": 0.0771820326659774
+        }
+    }
+}
