@@ -1,0 +1,7 @@
+Model,Alpha,"CV R2 (train, 5-fold)","Test R2 (final, once)"
+"Baseline (DummyRegressor, mean)",-,-0.002,-
+Plain LinearRegression,-,0.84,-
+"Ridge (scaled, alpha=1)",1,0.84,-
+"Lasso (scaled, alpha=1)",1,-0.002,-
+Ridge tuned (RidgeCV),1.0,0.84,-
+Lasso tuned (LassoCV)  <- final Pipeline,0.001,0.84,0.838
