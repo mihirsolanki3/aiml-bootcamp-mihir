@@ -1,0 +1,7 @@
+Group,Learning Rate,Number of Trees,Test ROC-AUC
+Paired,0.3,50,0.8616
+Paired,0.1,150,0.8705
+Paired,0.05,300,0.8694
+Paired,0.01,1500,0.872
+Broken,0.01,50,0.876
+Broken,0.3,1500,0.7705
